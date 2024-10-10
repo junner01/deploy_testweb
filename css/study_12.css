@@ -6,9 +6,11 @@ body {
   font-size:16px;
 }
 #wrapper{
+    
   display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns:repeat(3, minmax(320px, 100px));
   grid-gap:1rem;
+  margin-bottom: 30px;
 }
 .card {
   background-color:#fff;
@@ -17,11 +19,36 @@ body {
 .card > header {
   font-size:1.5rem;
   padding:0.5rem;
+  text-align: center;
 }
-.card > p {
-  padding:0.5rem;
-  line-height:1.6em;
-}
+
 .card > img {
   max-width:100%;
+}
+.card_font{
+  color: black;
+  padding:0.5rem;
+  text-align: left;
+}
+
+.container{
+  width: 400px;
+  height: 90px;
+  display: flex;
+  background-color:#eee;
+  border:1px solid #222;
+  margin-bottom:30px;
+}
+.box {
+  padding:5px 45px;
+  margin:5px;   
+  width: 30px;;
+  background-color:#222;   
+}
+#opt1{
+  flex-direction: row;          /* 왼쪽에서 오른쪽으로 */ 
+}
+p {
+  color:#fff;
+  text-align: center;
 }

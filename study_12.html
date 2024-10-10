@@ -6,11 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12강의</title>
     <link rel="stylesheet" href="css/study_12.css">
+    <style>
+
+
+    </style>
 </head>
 
 <body>
-    <h2>12강의 미니실습</h2>
+    <h2>12단원 미니실습</h2>
     <div id="wrapper">
+        <div class="card" id="test1">
+                <header>
+                    <h3>사진 제목</h3>
+                </header>
+                <figure>
+                    <img src="images\cup-1.jpg"></a>
+                </figure>
+                <p class="card_font">사진 설명 : </p>
+
+        </div>
+
+
         <div class="card">
             <header>
                 <h3>사진 제목</h3>
@@ -18,30 +34,43 @@
             <figure>
                 <img src="images\cup-1.jpg">
             </figure>
-            <p>사진 설명 : </p>
+            <p class="card_font">사진 설명 : </p>
         </div>
 
-    <div id="wrapper">
+
         <div class="card">
             <header>
-            <h3>사진 제목</h3>
+                <h3>사진 제목</h3>
             </header>
-                <figure>
-                    <img src="images\cup-1.jpg">
-                </figure>
-                <p>사진 설명 : </p>
+            <figure>
+                <img src="images\cup-1.jpg">
+            </figure>
+            <p class="card_font">사진 설명 : </p>
+        </div>
+    </div>
+
+    <div class="container" id="opt1">
+
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
         </div>
 
-    <div id="wrapper">
-        <div class="card">
-            <header>
-            <h3>사진 제목</h3>
-            </header>
-                <figure>
-                    <img src="images\cup-1.jpg">
-                </figure>
-                    <p>사진 설명 : </p>
-            </div>
+    </div>
+
+<script>
+      document.getElementById('test1').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+</script>
+
+
+
 </body>
 
 </html>
