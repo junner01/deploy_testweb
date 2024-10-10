@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap'); 
+
+body {
+    background: url('../images/doggy.jpg') center no-repeat fixed; 
+    background-size: contain;
+    margin: 0;
+    height: 50vh;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    position: absolute;
+    top: 20px; /* 상단에서의 거리 */
+    left: 20px; /* 좌측에서의 거리 */
+    margin: 0;
+    color: rgba(70, 167, 197, 0.849);
+    font-size: 100px;
+    text-shadow: 10px -10px 30px #3695b3;
+    font-family: "Nanum Pen Script", cursive;
+}
+h1 a {
+    color: rgba(70, 167, 197, 0.849); /* h1 내부의 a 태그 색상 설정 */
+}
+
+ol {
+    position: absolute;
+    top: 120px; /* h1 아래에 올 수 있도록 조정 */
+    left: 20px; /* 좌측에서의 거리 */
+    
+    
+}
+
+li {
+    margin-bottom: 10px;
+}
