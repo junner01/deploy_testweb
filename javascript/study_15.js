@@ -1,3 +1,4 @@
+// 배경 이미지 및 설명 변경
 function changeBg(type) {
     var result = document.querySelector('#result');
     var description = document.querySelector('#description');
@@ -23,5 +24,43 @@ function changeBg(type) {
             <p>일본 음식은 신선한 재료와 섬세한 맛을 강조합니다. 스시, 라멘, 사시미 등이 대표적입니다.</p>
             <p><strong>대표 메뉴:</strong> 스시, 라멘, 텐동</p>
         `;
+    }
+}
+
+// 랜덤 메뉴 기능
+function randomMenu() {
+    var menus = [
+        { name: "비빔밥", price: "8000원", img: "images/kor.jpg" },
+        { name: "짜장면", price: "6000원", img: "images/chi.jpg" },
+        { name: "스시", price: "12000원", img: "images/jap.jpg" }
+    ];
+    
+    var random = Math.floor(Math.random() * menus.length);
+    var randomMenu = menus[random];
+    
+    document.querySelector("#random-result").innerHTML = `
+        <h3>선택된 메뉴: ${randomMenu.name}</h3>
+        <p>가격: ${randomMenu.price}</p>
+        <img src="${randomMenu.img}" alt="${randomMenu.name}" width="300px">
+    `;
+}
+
+// 메뉴 추가 및 삭제
+function addMenu() {
+    var menuInput = document.querySelector('#menu-input');
+    var menuList = document.querySelector('#menu-list');
+
+    if (menuInput.value.trim() !== "") {
+        var li = document.createElement('li');
+        li.textContent = menuInput.value;
+        menuList.appendChild(li);
+        menuInput.value = "";  // 입력창 초기화
+    }
+}
+
+function deleteMenu() {
+    var menuList = document.querySelector('#menu-list');
+    if (menuList.lastChild) {
+        menuList.removeChild(menuList.lastChild);
     }
 }
