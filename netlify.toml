@@ -1,7 +1,4 @@
-[build]
-publish = "public"
-
 [[redirects]]
-    from ="/"
-    to = "3.html"
-    status = 200
+from = "/*"
+to = "3.html"
+status = 200

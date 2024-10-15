@@ -13,7 +13,7 @@ h1 {
 ol {
     border-right: 5px solid gray;
     width: 50px;
-    margin: 0;
+    margin: 20px;
     padding: 30px;
 }
 #grid {
